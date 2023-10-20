@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light py-5">
+    <section id="setting">
+        <div class="bg-white overflow-auto w-50 m-auto shadow-lg  rounded-lg">
+            <h1 class="text-center text-spec py-5 bg-light border-bottom">Setting Your Quiz</h1>
+            <div class="d-flex justify-content-center align-items-center"> <button id="startBtn"
+                    class="btn py-2 px-5 bg-spec rounded-pill text-white my-4">Start
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="quiz">
+        <div class="bg-white w-50 m-auto shadow-lg rounded-lg  overflow-auto">
+            <div class="p-3 bg-light border-bottom overflow-auto">
+                <h1 class="text-spec text-center ">Quiz</h1>
+                <div id="timer" class="float-left   p-2">Time Remaining: <span id="countdown"></span> seconds</div>
+                <span class="float-right bg-spec rounded-pill text-white p-2 "><span id="questionNumber"></span></span>
+                <span id="inCorrect" class="btn btn-danger float-left">InCorrect</span>
+                <span id="Correct" class="btn btn-success float-left">Correct</span>
+                <div class="clearFix"></div>
+            </div>
+            <div class="p-4 text-spec">
+                <h5 class="d-inline " id="num">Q: </h5>
+                <h5 id="question" class="d-inline pb-3"></h5>
+                <div id="rowAnswer" class="mt-3"></div>
+                <div id="alert" class="alert alert-danger mt-3 warm">Please Choose Your Answer</div>
+                <button class="btn float-right py-2 px-4 bg-spec rounded-pill text-white my-4" id="next">Submit</button>
+            </div>
+        </div>
+    </section>
+    <section id="finish">
+        <div class="bg-white w-50 m-auto shadow-lg rounded overflow-auto text-center">
+            <h1 class=" text-spec py-5 bg-light border-bottom">Finish</h1>
+            <div class="p-4">
+                <h5 class=" text-spec">Score</h5>
+                <h4 class=" text-spec" id="timeleft"></h4>
+                <h4 class=" text-spec" id="score"></h4>
+                <h4 id="result" class=" text-spec "></h4>
+                <figure class="d-flex justify-content-center align-items-center">
+                    <img class="displays text-center " id="congratulation"
+                        src="images/illustration-calligraphic-inscription-congratulations-vector-260nw-1930105679-removebg-preview.png"
+                        alt="" srcset="">
+                    <img class="displays text-center " id="not-good"
+                        src="images/phrase-not-good-enough-on-260nw-2033556125-removebg-preview.png" alt="" srcset="">
+                    <img class="displays text-center " id="bad"
+                        src="images/flat-emoji-icon-reaction_165282-1169-removebg-preview.png" alt="" srcset="">
+                </figure>
+                <button class="btn float-right py-2 px-4 bg-spec rounded-pill text-white my-4" id="tryBtn">Try
+                    Again?</button>
+            </div>
+        </div>
+    </section>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
